@@ -284,7 +284,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 4.209rem;
 }
 
 .navbar {
@@ -780,7 +780,8 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
+    
 }
 
 .btn-atomic-tangerine:hover {
@@ -809,6 +810,10 @@ h4 {
     border-color: #364577!important;
 }
 
+.layout {
+    border-right: 5px solid rgb(240, 240, 240);
+}
+
 .bg-dots-bg {
     background-image: url("img/dots-bg.png");
 }
@@ -823,6 +828,12 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
+}
+
+.positioning {
+    width: 50%;
+    font-size: 2.369rem;
+    margin: 0 auto 6rem auto;
 }
 
 @media (max-width: 1024px) {
