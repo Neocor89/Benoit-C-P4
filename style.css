@@ -133,7 +133,8 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    /* color: rgba(255, 255, 255, .6); */
+    color: #fff;
 }
 
 .d-bloc .a-btn:hover,
@@ -195,7 +196,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: #000;
 }
 
 .d-bloc .panel button:hover,
@@ -651,7 +652,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    /* color: #575757!important; */
 }
 
 .container {
@@ -676,9 +677,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
+/* p {
     font-size: 11px;
-}
+} */
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -710,10 +711,10 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.693rem;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    /* color: #333333!important; */
 }
 
 .med-width-whitespace {
@@ -831,9 +832,21 @@ h4 {
 }
 
 .positioning {
-    width: 50%;
-    font-size: 2.369rem;
-    margin: 0 auto 6rem auto;
+    width: 71%;
+    font-size: 2.441rem;
+    margin: 0 auto 7rem auto;
+    font-weight: 500;
+    border-bottom: 1px solid #000;
+}
+
+
+.fs {
+    font-size: 1.793rem;
+}
+
+.adjust {
+    font-size: 2.441rem;
+    padding-bottom: 1.5rem;
 }
 
 @media (max-width: 1024px) {
