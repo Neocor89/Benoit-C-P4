@@ -45,7 +45,7 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 70px 50px;
 }
 
 .bloc-md {
@@ -91,9 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
-    opacity: 0.5;
 }
 
 .b-parallax {
@@ -134,8 +132,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    /* color: rgba(255, 255, 255, .6); */
-    color: #fff;
+    color: #000;
 }
 
 .d-bloc .a-btn:hover,
@@ -306,6 +303,8 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    width: 240px;
+    
 }
 
 .navbar-brand img[src$=svg] {
@@ -652,7 +651,6 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    /* color: #575757!important; */
 }
 
 .container {
@@ -660,7 +658,7 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 4.209rem;
 }
 
 .hero-bloc-text-sub {
@@ -677,10 +675,6 @@ a {
     margin: auto auto auto auto;
 }
 
-/* p {
-    font-size: 11px;
-} */
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
@@ -693,7 +687,7 @@ a {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    color: #000!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -746,7 +740,7 @@ h4 {
 
 .portfolio-row {
     margin-bottom: 44px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .avatar {
@@ -816,10 +810,6 @@ h4 {
     border-right: 5px solid #4f4f4f;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
 }
@@ -829,8 +819,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.png");
-    filter: brightness(1.1);
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 .positioning {
@@ -856,15 +845,61 @@ h4 {
     padding-bottom: 1.5rem;
 }
 
-.btn-modif {
-   position: absolute;
-   right: 4%;
-   bottom: 0%;
-   border-radius: 10rem;
-   padding: 1rem 3rem;
-   font-weight: 700;
-   background-color: #F3976C;
-   color: #fff;  
+.social--color {
+    color: #000000;
+    font-weight: 600;
+}
+
+.text-center--color {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.563rem;
+}
+
+.address-home {
+    font-size: 1.563rem;
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+.image--resize {
+    width: 110px;
+}
+
+
+@media (max-width: 768px) {
+    #bloc-1-hero h1 {
+        font-size: 3.409rem;
+    }
+    .positioning {
+        width: 93%;
+        font-size: 2.189rem;
+        margin: 0rem auto 5rem auto;
+    }
+    .layout {
+        border-right: 5px solid #4f4f4f;
+        width: 88%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    cite {
+        font-weight: 600;
+    }
+    .portfolio-row {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .fs {
+        padding-bottom: 2rem;
+    }
+     address {
+         text-align: center;
+     }
+     .address-home {
+        padding-bottom: 2rem;
+     }
+  
 }
 
 .add-color {
@@ -896,13 +931,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -920,20 +955,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1011,7 +1036,7 @@ h4 {
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 180px;  /* CHANGEMENT AUTO A 180PX */
     }
     .nav-invert .navbar-header {
         float: none;
