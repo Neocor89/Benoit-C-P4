@@ -287,7 +287,7 @@ color: #000;
 
 #bloc-1-hero h1 {
     font-size: 4.209rem;
-    color: #f3976c;
+    color: #000;
 }
 
 .navbar {
@@ -340,7 +340,7 @@ color: #000;
 .nav > li a:hover,
 .nav > li a:focus {
     background: #f3976c;
-    filter: brightness(1.05);
+    color: #000;
 }
 
 .navbar-toggle {
@@ -812,11 +812,19 @@ h3 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.png");
+    background-position: right;
 }
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+.add-color {
+    color: #000;
+    font-weight: 800;
+    line-height: 30px;
+    font-size: 1.9rem;
 }
 
 .positioning {
@@ -914,15 +922,21 @@ h3 {
         height: 30px;
         line-height: 50px;
     }
+    .image--resize {
+        width: 90px;
+    }
+    .add-color {
+        font-size: 1.8rem;
+    }
   
 }
 
-.add-color {
+/* .add-color {
     color: #000;
     font-weight: 800;
     line-height: 30px;
     font-size: 1.9rem;
-}
+} */
 
 @media (max-width: 1024px) {
     .bloc {
