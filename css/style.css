@@ -795,7 +795,6 @@ h3 {
 
 .bg-presentation {
     background-image: url("/img/image-de-presentation.webp");
-    background-image: cover;
 }
 
 .add-color {
