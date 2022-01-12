@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="index, follow">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'none'">
 	<meta name="google-site-verification" content="Vtqfvnxtx0GsAqXW7EtmKS_OP-4HwST0qLz-5gaa0zI" />
 	<meta name="description" content="Excellente agence webdesign à Lyon, des web designers au service des entreprises, aide au développement, attractivité  et gain de visibilité sur le web, création et conception ">
 	<meta name="keywords" content="Entrprise web design, Lyon, Stategie Web,"> <!-- ! FINIR DE RENTRER LES MOTS CLES -->
@@ -103,33 +104,34 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form id="form_1">
-								<div class="form-group">
-									<label>
-										Nom
-									</label>
-									<input id="name" class="form-control" required />
-								</div>
-								<div class="form-group">
-									<label>
-										Adresse email
-									</label>
-									<input id="email" class="form-control" type="email" required />
-								</div>
-								<div class="form-group">
-									<label>
-										Comment nous avez-vous connu ?
-									</label>
-									<input class="form-control" type="email" required id="input_504" />
-								</div>
-								<div class="form-group">
-									<label>
-										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-								</div>
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-									Envoyer
-								</button>
+							<form id="form_1" data-success="Your message has been sent." data-error="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+								<div class="form-group" role="group">
+										<label for="name">
+											Nom
+										</label>
+										<input type="text" id="name" name="name" class="form-control" required />
+									</div>
+									<div class="form-group">
+										<label for="email">
+											Adresse email
+										</label>
+										<input type="email" id="email" class="form-control" required />
+									</div>
+									<div class="form-group">
+										<label for="message">
+											Comment nous avez-vous connu ?
+										</label>
+										<input class="form-control" aria-label="text" required id="input_504" />
+									</div>
+									<div class="form-group">
+										<label>
+											Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+										</label>
+										<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
+									</div>
+									<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+										Envoyer
+									</button>
 							</form>
 						</div>
 						<div class="col-sm-6">
