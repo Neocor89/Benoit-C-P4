@@ -665,9 +665,12 @@ h3 {
 .bg-banniere {
 	background-image: url("/img/la-chouette-agence-banniere.webp");
 	background-position: top right;
+	width: auto;
+	
 }
 .bg-presentation {
 	background-image: url("/img/image-de-presentation.webp");
+	width: 100%;
 }
 .add-color {
 	color: rgb(5, 5, 5);
@@ -971,11 +974,18 @@ h3 {
 	}
 	.bg-presentation {
 		background-position: center;
+		width: auto;
+	}
+	.adjust {
+		font-size: 2.2rem;
 	}
 	.text-center--color {
 		font-size: 1.50rem;
 	}
 	.social--color {
 		font-size: 1.5rem;
+	}
+	.snapshot-lb .lightbox-caption {
+		font-size: 1.1rem;
 	}
 }
