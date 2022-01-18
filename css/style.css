@@ -660,16 +660,16 @@ h3 {
 	border-right: 5px solid #4f4f4f;
 }
 .bg-lines-h2-bg {
-	background-image: url("/img/lines-h2-bg.webp");
+	background-image: url("../img/lines-h2-bg.webp");
 }
 .bg-banniere {
-	background-image: url("/img/la-chouette-agence-banniere.webp");
+	background-image: url("../img/la-chouette-agence-banniere.webp");
 	background-position: top right;
 	width: auto;
 	
 }
 .bg-presentation {
-	background-image: url("/img/image-de-presentation.webp");
+	background-image: url("../img/image-de-presentation.webp");
 	width: 100%;
 }
 .add-color {
